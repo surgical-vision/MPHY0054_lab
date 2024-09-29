@@ -2,7 +2,7 @@
 Collection of packages for lab sessions in COMP0127 Robotic Systems Engineering.
 
 ## Lab Manuals
-The markdown (.md) versions of the .pdf lab manuals available on moodle are located in the [lab_manuals](https://github.com/surgical-vision/comp0127_lab/tree/master/lab_manuals) folder.
+The markdown (.md) versions of the .pdf lab manuals available on moodle are located in the [lab_manuals](https://github.com/surgical-vision/MPHY0054_lab/blob/main/lab_manuals) folder.
 
 ## Ubuntu 20.04 and ROS 1 Noetic Setup
 
