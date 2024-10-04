@@ -1,4 +1,4 @@
-# **COMP0127 Robotic Systems Engineering Lab 01**
+# **MPHY0054_lab Robotic Systems Engineering Lab 01**
 <img src="lab_md_media/lab01_media/image1.jpeg" alt="image" width="100%" height="auto">
 
 **Module lead:** Dr. Agostino Stilli
