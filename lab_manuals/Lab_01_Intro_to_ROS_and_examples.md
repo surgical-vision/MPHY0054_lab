@@ -600,7 +600,7 @@ lab repository:
 ```
 cd ~/catkin_ws/src
 
-git clone https://github.com/surgical-vision/comp0127_lab.git
+git clone https://github.com/surgical-vision/MPHY0054_lab.git
 
 cd ..
 
