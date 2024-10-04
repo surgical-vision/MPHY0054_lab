@@ -652,7 +652,7 @@ yourself with the environment, for example:
     the model.
 
 **SIDE NOTE:**
-The folder ‘comp0127_lab’ is the collection of the lab examples, 
+The folder ‘MPHY0054_lab’ is the collection of the lab examples, 
 lab tasks and packages required for running the simulation environment.
 For this week, we only have ‘robot_description’, ‘youbot_simulator’ and ‘lab01’.
 
