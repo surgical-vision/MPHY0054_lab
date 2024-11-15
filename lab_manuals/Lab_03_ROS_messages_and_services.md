@@ -7,7 +7,7 @@
 This document contains examples and exercises on writing code for
 customized ROS messages and ROS service-client communication.
 
-Navigate into the `comp0127_lab` folder inside your
+Navigate into the `MPHY0054_lab` folder inside your
 workspace and run:
 
 ```
@@ -113,7 +113,7 @@ rosmsg show lab03_example/Num
 Navigate into that package folder and we will create a ROS service.
 
 ```
-cd ~/catkin_ws/src/comp0127/lab03/lab03_example
+cd ~/catkin_ws/src/MPHY0054_lab/lab03/lab03_example
 mkdir srv
 ```
 
@@ -131,7 +131,7 @@ step as creating a msg file, thus navigate into your srv folder and
 type:
 
 ```
-# Inside ~/catkin_ws/src/comp0127/lab03/lab03_example/srv
+# Inside ~/catkin_ws/src/MPHY0054_lab/lab03/lab03_example/srv
 gedit AddTwoInts.srv 
 ```
 
@@ -187,7 +187,7 @@ a rotation matrix (that will be printed).
 First, let's create a new package `lab03_example_msg`:
 
 ```
-cd ~/catkin_ws/src/comp0127_lab/lab03
+cd ~/catkin_ws/src/MPHY0054_lab/lab03
 catkin_create_pkg lab03_example_msg rospy std_msgs
 ```
 
@@ -342,10 +342,10 @@ useful messages such as points and quaternions that will be widely used
 during the course.
 
 let's create a new package `lab03_example_srv` inside our
-comp0127_lab/lab03 directory:
+MPHY0054_lab/lab03 directory:
 
 ```
-cd ~/catkin_ws/src/comp0127_lab/lab03
+cd ~/catkin_ws/src/MPHY0054_lab/lab03
 catkin_create_pkg lab03_example_srv rospy std_msgs geometry_msgs
 ```
 
