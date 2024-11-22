@@ -34,8 +34,6 @@ def youbot_traj():
     # Cartesian checkpoints in this same way,
     # your code starts here ------------------------------
 
-    for i in range(joint_targets.shape[1]):
-        joint_targets[:, i] = hardcoded_joint_targets[i]
 
     # your code ends here ------------------------------
 
@@ -43,9 +41,6 @@ def youbot_traj():
     # checkpoint method needs the transformation matrix.
     # your code starts here ------------------------------
 
-    checkpoint = np.zeros([4, 4, joint_targets.shape[1]])
-    for i in range(joint_targets.shape[1]):
-        checkpoint[:, :, i] = kdl_youbot.forward_kinematics(list(joint_targets[:, i]))
 
     # your code ends here ------------------------------
 
@@ -59,19 +54,6 @@ def youbot_traj():
     # Create a trajectory message and publish to get the robot to move to this checkpoints
     traj = JointTrajectory()
     # your code starts here ------------------------------
-
-    t = 10
-    dt = 2
-    for i in range(joint_targets.shape[1]):
-        traj_point = JointTrajectoryPoint()
-        traj_point.positions = joint_targets[:, i]
-        t = t + dt
-        traj_point.time_from_start.secs = t
-        traj.points.append(traj_point)
-
-    traj.header.stamp = rospy.Time.now()
-    traj.joint_names = ["arm_joint_1", "arm_joint_2", "arm_joint_3", "arm_joint_4", "arm_joint_5"]
-    traj_pub.publish(traj)
 
     # your code ends here ------------------------------
 
