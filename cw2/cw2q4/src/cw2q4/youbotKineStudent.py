@@ -8,9 +8,12 @@ class YoubotKinematicStudent(YoubotKinematicBase):
     def __init__(self):
         super(YoubotKinematicStudent, self).__init__(tf_suffix='student')
 
-        # Set the offset for theta --> This was updated on 22/11/2024. Fill it in with your calculated joint offsets in cw1 if you need testing.
-        # the standard joint offsets will be updated soon.
-        youbot_joint_offsets = [0, 0, 0, 0, 0] # place holder 0s for now
+        # Set the offset for theta --> This was updated on 03/12/2024. 
+        youbot_joint_offsets = [170.0 * np.pi / 180.0,
+                                -65.0 * np.pi / 180.0,
+                                146 * np.pi / 180,
+                                -102.5 * np.pi / 180,
+                                -167.5 * np.pi / 180]
 
         # Apply joint offsets to dh parameters
         self.dh_params['theta'] = [theta + offset for theta, offset in

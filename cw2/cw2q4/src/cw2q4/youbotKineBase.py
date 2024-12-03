@@ -12,11 +12,11 @@ class YoubotKinematicBase(object):
         # Identify class used when broadcasting tf with a suffix
         self.tf_suffix = tf_suffix
 	
-	# --> Updated on 22/11/2024. Fill it in with your calculated DH parameters in cw1, the standard answer DH parameters will be updated soon.
-        youbot_dh_parameters = {'a': [0, 0, 0, 0, 0],
-                                'alpha': [0, 0, 0, 0, 0],
-                                'd': [0, 0, 0, 0, 0],
-                                'theta': [0, 0, 0, 0, 0]}
+	# --> Updated on 03/12/2024. 
+        youbot_dh_parameters = {'a': [-0.033, 0.155, 0.135, +0.002, 0.0],
+                                'alpha': [np.pi / 2, 0.0, 0.0, np.pi / 2, np.pi],
+                                'd': [0.145, 0.0, 0.0, 0.0, -0.185],
+                                'theta': [np.pi, np.pi / 2, 0.0, -np.pi / 2, np.pi]}
         # placeholder 0s for now
         
         self.dh_params = youbot_dh_parameters.copy()
