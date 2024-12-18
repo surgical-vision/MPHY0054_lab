@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import numpy as np
 from cw3q2.iiwa14DynBase import Iiwa14DynamicBase
