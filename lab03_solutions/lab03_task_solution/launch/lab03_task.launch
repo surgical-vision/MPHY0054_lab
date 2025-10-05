@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-    <!-- Run publisher_node -->
-    <node name="server" pkg="lab03_task_solution" type="server.py"/>
-    <!-- Run subscriber_node -->
-    <node name="client" pkg="lab03_task_solution" type="client.py" output="screen"/>
-
-</launch>
