@@ -10,7 +10,9 @@ Newer releases of Ubuntu (e.g. Ubuntu 22.04 or Ubuntu 23.04) are **NOT** compati
 ## Download and Run from Github
 
 mkdir -p ~/ros2_ws/src
+
 cd ~/ros2_ws/src
+
 git clone https://github.com/surgical-vision/MPHY0054_lab.git
 
 
