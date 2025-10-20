@@ -1,4 +1,5 @@
 # MPHY0054_lab
+
 Collection of packages for lab sessions in MPHY0054 Robotic Systems Engineering.
 
 ## Ubuntu 20.04 and ROS 2 Foxy Fitzroy Setup
@@ -15,7 +16,17 @@ cd ~/ros2_ws/src
 
 git clone https://github.com/surgical-vision/MPHY0054_lab.git
 
-
 ## Update to the Latest Version
+
 cd ~/ros2_ws/src/MPHY0054_lab
 git pull
+
+## Install dependencies for CW1
+
+sudo apt update
+sudo apt install ros-foxy-robot-state-publisher \
+                 ros-foxy-joint-state-publisher \
+                 ros-foxy-joint-state-publisher-gui \
+                 ros-foxy-rviz2 \
+                 ros-foxy-gazebo-ros-pkgs
+pip install numpy
