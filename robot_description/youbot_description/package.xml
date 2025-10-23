@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>youbot_description</name>
+  <version>0.8.1</version>
+  <description>Robot descriptions in form of URDF files and meshes</description>
+
+  <maintainer email="nowak@locomotec.com">Walter Nowak</maintainer>
+  <maintainer email="blumenthal@locomotec.com">Sebastian Blumenthal</maintainer>
+
+  <license>GPL-3.0-or-later</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
