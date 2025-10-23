@@ -3,13 +3,13 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
-from launch_ros.substitutions import FindPackageShare
+import os
 
 
 def generate_launch_description():
     # ===== Paths (edit if your package/layout differs) =====
     # If you use a different description package, change the name below.
-    open_manipulator_desc = FindPackageShare('open_manipulator_description')
+    open_manipulator_desc = os.path.expanduser('~/ros2_ws/src/MPHY0054_lab/robot_description/open_manipulator_description')
 
     # If your URDF/Xacro filename or folder differs, update this path.
     urdf_file = PathJoinSubstitution([
