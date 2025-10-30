@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lab05_example</name>
+  <version>0.0.0</version>
+  <description>The lab05_example package</description>
+
+  <maintainer email="keshav@todo.todo">keshav</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>python3-numpy</depend>
+  <depend>python3-pykdl</depend>
+
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>open_manipulator_description</exec_depend>
+  <exec_depend>youbot_description</exec_depend>
+  <exec_depend>youbot_simulator</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

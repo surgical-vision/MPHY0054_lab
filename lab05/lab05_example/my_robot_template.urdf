@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot name="lab05_test_robot">
+  <!-- Follow the Lab 05 handout for the step-by-step build. -->
+  <!-- Step 1: Declare base_link with a short cylinder visual. -->
+
+  <!-- Step 2: Add shoulder_link visuals (cylinder) positioned above the base. -->
+
+  <!-- Step 3: Add elbow_link visuals (cylinder) positioned at the top of the shoulder. -->
+
+  <!-- Step 4: Add wrist_link visuals (cylinder) positioned at the top of the elbow. -->
+
+  <!-- Step 5: Add tool_link visuals (box) mounted on the wrist. -->
+
+  <!-- Step 6: Create shoulder_joint (revolute, Z axis) connecting base_link to shoulder_link. -->
+
+  <!-- Step 7: Create elbow_joint (revolute, Y axis) connecting shoulder_link to elbow_link. -->
+
+  <!-- Step 8: Create wrist_joint (revolute, Y axis) connecting elbow_link to wrist_link. -->
+
+  <!-- Step 9: Create tool_joint (fixed) connecting wrist_link to tool_link. -->
+</robot>
