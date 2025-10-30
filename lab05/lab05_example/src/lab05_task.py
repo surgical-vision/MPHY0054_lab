@@ -39,10 +39,7 @@ class YoubotKDLKinematic:
     # This function takes in joint readings, converts to appropriate KDL types
     # then calls the FK solver to get the transformation
     def forward_kinematics(self, joints_kdl):
-        pose_kdl = kdl.Frame()
-        self.fk_solver.JntToCart(joints_kdl, pose_kdl)
-        # Convert KDL Pose to array
-        pose = self.convert_kdl_frame_to_mat(pose_kdl)
+        
         return pose
 
     # This function is a callback for the subscriber for joint_states.
