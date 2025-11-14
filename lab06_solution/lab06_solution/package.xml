@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lab06_solution</name>
+  <version>0.0.0</version>
+  <description>The lab06_solution package</description>
+
+  <maintainer email="emanuele@todo.todo">emanuele</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-pykdl</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>youbot_description</exec_depend>
+  <exec_depend>youbot_simulator</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
