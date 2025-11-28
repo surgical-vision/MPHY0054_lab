@@ -37,7 +37,7 @@ from rclpy.qos import (
 
 import PyKDL as kdl
 
-from .src.urdf_kdl_utils import build_kdl_chain_from_urdf
+from .urdf_kdl_utils import build_kdl_chain_from_urdf
 
 
 class YoubotTrajectoryNode(Node):
