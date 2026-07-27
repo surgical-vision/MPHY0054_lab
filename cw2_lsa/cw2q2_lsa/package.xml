@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>cw2q2_lsa</name>
+  <version>0.0.0</version>
+  <description>The cw2q2_lsa package for ROS2 Foxy coursework 2.</description>
+
+  <maintainer email="keshav@todo.todo">keshav</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ament_index_python</depend>
+  <depend>python3-numpy</depend>
+  <depend>python3-pykdl</depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>rosbag2_py</depend>
+  <depend>rosidl_runtime_py</depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

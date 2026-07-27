@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="iiwa">
+
+  <!-- Arguments -->
+  <xacro:arg name="prefix" default=""/>
+  <xacro:arg name="ee_no" default="true"/>
+  <xacro:property name="prefix" value="$(arg prefix)"/>
+
+  <!-- Bring in the ROS2 iiwa macro (includes ros2_control + Gazebo plugin) -->
+  <xacro:include filename="$(find iiwa_ros2_gazebo)/urdf/iiwa_macro.urdf.xacro"/>
+
+  <!-- Base world link and fixed joint -->
+  <link name="world"/>
+
+  <xacro:iiwa prefix="$(arg prefix)" EE_no="$(arg ee_no)"/>
+
+  <joint name="${prefix}world_base_link_fixed" type="fixed">
+    <parent link="world"/>
+    <child link="${prefix}base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>

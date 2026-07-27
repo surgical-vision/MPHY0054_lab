@@ -1,0 +1,29 @@
+rosbag2_bagfile_information:
+  compression_format: ''
+  compression_mode: ''
+  custom_data: {}
+  duration:
+    nanoseconds: 187873
+  files:
+  - duration:
+      nanoseconds: 187873
+    message_count: 4
+    path: data_ros2.db3
+    starting_time:
+      nanoseconds_since_epoch: 1636914492067280054
+  message_count: 4
+  relative_file_paths:
+  - data_ros2.db3
+  ros_distro: rosbags
+  starting_time:
+    nanoseconds_since_epoch: 1636914492067280054
+  storage_identifier: sqlite3
+  topics_with_message_count:
+  - message_count: 4
+    topic_metadata:
+      name: joint_data
+      offered_qos_profiles: ''
+      serialization_format: cdr
+      type: sensor_msgs/msg/JointState
+      type_description_hash: RIHS01_a13ee3a330e346c9d87b5aa18d24e11690752bd33a0350f11c5882bc9179260e
+  version: 8

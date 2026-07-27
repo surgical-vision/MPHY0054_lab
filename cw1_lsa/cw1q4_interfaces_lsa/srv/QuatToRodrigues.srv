@@ -1,0 +1,4 @@
+# Request: A quaternion to be converted.
+
+---
+# Response: The resulting Rodrigues representation.
