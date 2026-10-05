@@ -2,7 +2,7 @@
 
 Collection of packages for lab sessions in MPHY0054 Robotic Systems Engineering.
 
-## Ubuntu 20.04 and ROS 2 Foxy Fitzroy Setup
+## Ubuntu 20.04 and ROS 2 Setup
 
 Note:
 This course is designed using **ROS 2 Humble and Ubuntu 22.04** environment.
