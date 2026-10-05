@@ -6,7 +6,6 @@ Collection of packages for lab sessions in MPHY0054 Robotic Systems Engineering.
 
 Note:
 This course is designed using **ROS 2 Humble and Ubuntu 22.04** environment.
-Newer releases of Ubuntu (e.g. Ubuntu 22.04 or Ubuntu 23.04) are **NOT** compatible.
 
 ## Download and Run from Github
 
