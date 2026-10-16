@@ -1,0 +1,129 @@
+# Simulation-only PID gains; controller update period is 1 ms.
+controller_manager:
+  ros__parameters:
+    update_rate: 1000
+    use_sim_time: true
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    EffortJointInterface_J1_controller:
+      type: effort_controllers/JointGroupEffortController
+    EffortJointInterface_J2_controller:
+      type: effort_controllers/JointGroupEffortController
+    EffortJointInterface_J3_controller:
+      type: effort_controllers/JointGroupEffortController
+    EffortJointInterface_J4_controller:
+      type: effort_controllers/JointGroupEffortController
+    EffortJointInterface_J5_controller:
+      type: effort_controllers/JointGroupEffortController
+    EffortJointInterface_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    PositionJointInterface_J1_controller:
+      type: position_controllers/JointGroupPositionController
+    PositionJointInterface_J2_controller:
+      type: position_controllers/JointGroupPositionController
+    PositionJointInterface_J3_controller:
+      type: position_controllers/JointGroupPositionController
+    PositionJointInterface_J4_controller:
+      type: position_controllers/JointGroupPositionController
+    PositionJointInterface_J5_controller:
+      type: position_controllers/JointGroupPositionController
+    PositionJointInterface_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+EffortJointInterface_J1_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_1
+EffortJointInterface_J2_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_2
+EffortJointInterface_J3_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_3
+EffortJointInterface_J4_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_4
+EffortJointInterface_J5_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_5
+EffortJointInterface_trajectory_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_1
+    - arm_joint_2
+    - arm_joint_3
+    - arm_joint_4
+    - arm_joint_5
+    command_interfaces:
+    - effort
+    state_interfaces:
+    - position
+    - velocity
+    state_publish_rate: 100.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    gains:
+      arm_joint_1:
+        p: 60.0
+        d: 4.0
+        i: 1.0
+        i_clamp: 3.0
+      arm_joint_2:
+        p: 60.0
+        d: 4.0
+        i: 1.0
+        i_clamp: 3.0
+      arm_joint_3:
+        p: 40.0
+        d: 2.0
+        i: 1.0
+        i_clamp: 3.0
+      arm_joint_4:
+        p: 20.0
+        d: 0.5
+        i: 0.5
+        i_clamp: 3.0
+      arm_joint_5:
+        p: 2.0
+        d: 0.05
+        i: 0.1
+        i_clamp: 3.0
+PositionJointInterface_J1_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_1
+PositionJointInterface_J2_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_2
+PositionJointInterface_J3_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_3
+PositionJointInterface_J4_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_4
+PositionJointInterface_J5_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_5
+PositionJointInterface_trajectory_controller:
+  ros__parameters:
+    joints:
+    - arm_joint_1
+    - arm_joint_2
+    - arm_joint_3
+    - arm_joint_4
+    - arm_joint_5
+    command_interfaces:
+    - position
+    state_interfaces:
+    - position
+    - velocity
+    state_publish_rate: 100.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
