@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lab03_task_solution</name>
+  <version>0.0.0</version>
+  <description>Lab 03 rotation-matrix service exercise for ROS 2 Humble.</description>
+  <maintainer email="mithrandir_chen@hotmail.com">tianchi</maintainer>
+  <license>TODO: License declaration</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>ros2run</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
