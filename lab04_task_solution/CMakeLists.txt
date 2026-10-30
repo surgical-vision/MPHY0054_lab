@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(lab04_task_solution)
+find_package(ament_cmake REQUIRED)
+install(PROGRAMS src/lab04_task.py DESTINATION lib/${PROJECT_NAME} RENAME task)
+install(DIRECTORY launch config models DESTINATION share/${PROJECT_NAME})
+install(FILES README.md ATTRIBUTION.txt DESTINATION share/${PROJECT_NAME})
+ament_package()
