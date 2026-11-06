@@ -1,0 +1,10 @@
+Robot model assets are copied from the course's robot_description directory.
+OpenManipulator: ROBOTIS, author Darby Lim, Apache License 2.0.
+Original package: open_manipulator_description, version 1.0.0.
+Repository: https://github.com/ROBOTIS-GIT/open_manipulator
+The supplied URDF is expanded for visualization. Simulation-only tags are omitted;
+link geometry and joint definitions are retained. Mesh URLs use this package.
+Original model licenses are included under models/licenses.
+These notices apply to model assets; the inherited course code license is not declared.
+YouBot: youbot_description, version 0.8.1, GPL-3.0-or-later.
+Original maintainers: Walter Nowak and Sebastian Blumenthal, Locomotec.
