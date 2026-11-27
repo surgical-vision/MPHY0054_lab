@@ -1,0 +1,5 @@
+YouBot model assets: youbot_description 0.8.1, GPL-3.0-or-later.
+Original maintainers: Walter Nowak and Sebastian Blumenthal, Locomotec.
+Expanded URDF from the course robot_description; simulation-only tags omitted.
+Mesh URLs refer to this package. The model license is under models/licenses.
+These notices apply to model assets; the inherited course code license is not declared.
